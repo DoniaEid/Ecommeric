@@ -12,7 +12,14 @@ namespace E_Commeric.Models
         private string name;
         private double price;
         private int quantity;
-
+        public Product() { }
+        public Product(int id,string name,double price,int quantity)
+        {
+            this.id = id;
+            this.name = name;
+            this.Price = price;
+            this.quantity = quantity;
+        }
         public int Id {
             get
             {
@@ -56,7 +63,7 @@ namespace E_Commeric.Models
             }
             set
             {
-                this.
+                this.quantity = value;
             }
         }
     }

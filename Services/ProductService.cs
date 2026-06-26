@@ -12,10 +12,10 @@ namespace E_Commeric.Services
     internal class ProductService
     {
 
-        private ListproductRepository L;
+        private IProductRepositrycs L;
 
-        public ProductService() {
-            L = new ListproductRepository();
+        public ProductService(IProductRepositrycs L) {
+            this.L = L;
         }
 
         public void AddProduct(Product p)
